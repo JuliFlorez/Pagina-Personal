@@ -1,0 +1,234 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+@font-face {
+    font-family: roboto;
+    src: url(font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url(font/Roboto-Medium.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: roboto;
+
+}
+
+* {
+    padding: 0;
+}
+
+.imagen {
+    background-color: rgb(0, 1, 24);
+    background-image: url(img/Programador.jpg);
+    border-bottom: 3px solid rgb(0, 1, 24);
+}
+
+.yo {
+    position: absolute;
+    top: 75px;
+    left: 40px;
+    border-radius: 100px;
+    width: 25%;
+}
+
+.fondo {
+    background-color: rgb(55, 88, 131);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+}
+
+.ul-header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(201, 201, 201);
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.ul-header li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+li {
+    list-style: none;
+    font-size: medium;
+}
+
+ul {
+    padding: 0%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 36%;
+    padding: 5%;
+    padding-bottom: 10%;
+}
+
+main h1 {
+    color: white;
+    font-family: roboto-medium;
+}
+
+main h2 {
+    color: antiquewhite;
+}
+
+main h3 {
+    color: antiquewhite;
+}
+
+section {
+    padding: 1.5%;
+}
+
+section h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: large;
+}
+
+.bio {
+    padding: 1%;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    background-color: rgb(0, 1, 24);
+    border-radius: 10px;
+}
+
+.img-formacion {
+    width: 100%;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.habilidades div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.separador {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.Alto{
+    color: greenyellow;
+}
+.Medio{
+    color: yellow;
+}
+.Bajo{
+    color: orange;
+}
+.img-trabajos {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+
+footer {
+    background-color: gray;
+    padding: 1rem;
+}
+
+.ul-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ul-footer li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (min-width: 401px) {
+    .yo {
+        position: absolute;
+        top: 75px;
+        left: 100px;
+        border-radius: 100px;
+        width: 15%;
+    }
+    .ul-header li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    section h3 {
+        font-size: x-large;
+    }
+    .bio {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .img-formacion {
+        width: 90%;
+        margin-left: 10px;
+    }
+    .habilidades {
+        flex-direction: row;
+    }
+    .img-trabajos {
+        display: flex;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .separador {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-top: none;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 801px) {
+    .yo {
+        top: 40px;
+        left: 100px;
+    }
+
+    li {
+        font-size: larger;
+    }
+
+    .bio {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .img-formacion {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .separador {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
