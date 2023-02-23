@@ -3,11 +3,13 @@
 @font-face {
     font-family: roboto;
     src: url(font/Roboto-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: roboto-medium;
     src: url(font/Roboto-Medium.ttf);
+    font-display: swap;
 }
 
 body {
@@ -32,6 +34,7 @@ body {
     left: 40px;
     border-radius: 100px;
     width: 25%;
+    height: auto;
 }
 
 .fondo {
@@ -47,7 +50,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: rgb(201, 201, 201);
-    padding: 10px;
+    padding: 5px;
     border-radius: 15px;
     margin-top: 10px;
 }
@@ -119,6 +122,7 @@ section h3 {
 
 .img-formacion {
     width: 100%;
+    height: auto;
 }
 
 .habilidades {
@@ -131,7 +135,9 @@ section h3 {
     margin-left: 20px;
     margin-right: 20px;
 }
-
+.habilidades li{
+    font-family: roboto-medium;
+}
 .separador {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -148,9 +154,26 @@ section h3 {
 .img-trabajos {
     display: flex;
     width: 80%;
+    height: auto;
     margin-left: 10%;
 }
-
+button{
+    display: flex;
+    margin-left: 35%;
+    background-color: rgb(0, 1, 24);
+    color: white;
+    border: 2px solid rgb(0, 1, 24);
+    border-radius: 10px;
+    padding: 2px;
+}
+button:hover{
+    color: rgb(0, 1, 24);
+    background-color: white;
+}
+.nohay{
+    color: white;
+    margin-left: 27%;
+}
 footer {
     background-color: gray;
     padding: 1rem;
@@ -163,8 +186,8 @@ footer {
 }
 
 .ul-footer li {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @media (min-width: 401px) {
@@ -175,6 +198,9 @@ footer {
         border-radius: 100px;
         width: 15%;
     }
+    .ul-header {
+        padding: 10px;
+    }
     .ul-header li {
         margin-left: 10px;
         margin-right: 10px;
@@ -183,8 +209,8 @@ footer {
         font-size: x-large;
     }
     .bio {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .img-formacion {
         width: 90%;
@@ -205,6 +231,16 @@ footer {
         border-left: 1px solid black;
         border-top: none;
         border-bottom: none;
+    }
+    button{
+        margin-left: 36%;
+    }
+    .nohay{
+        margin-left: 30%;
+    }
+    .ul-footer li {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
@@ -230,5 +266,11 @@ footer {
     .separador {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    button{
+        margin-left: 45%;
+    }
+    .nohay{
+        margin-left: 45%;
     }
 }
