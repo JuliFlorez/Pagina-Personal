@@ -90,6 +90,32 @@ main {
 main h1 {
     color: white;
     font-family: roboto-medium;
+    display: block;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 12.1ch;
+    animation: typing 2s steps(24);
+    overflow: hidden;
+}
+.Bio-Img{
+    display: flex;
+    flex-direction: column;
+}
+.Bio-Img img{
+    width: 75%;
+    height: 500px;
+    margin-left: 12.5%;
+    border-radius: 10px;
+}
+.bio{
+    margin-top: 20px;
+}
+
+@keyFrames typing {
+
+    from {
+        width: 0
+    }
 }
 
 main h2 {
@@ -122,12 +148,12 @@ section h3 {
 
 .img-formacion {
     display: none;
-    width: 100%;
-    height: auto;
 }
+
 .img-formacion-celu {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-left: 10%;
 }
 
 .habilidades {
@@ -136,31 +162,39 @@ section h3 {
     justify-content: center;
     color: rgb(0, 1, 24);
 }
+
 .habilidades div {
     margin-left: 20px;
     margin-right: 20px;
 }
-.habilidades li{
+
+.habilidades li {
     font-family: roboto-medium;
 }
+
 .separador {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.Alto{
+
+.Alto {
     color: greenyellow;
 }
-.Medio{
+
+.Medio {
     color: yellow;
 }
-.Bajo{
+
+.Bajo {
     color: orange;
 }
-.flexbox{
+
+.flexbox {
     display: flex;
     flex-wrap: wrap;
     margin-left: 15%;
 }
+
 .img-trabajos {
     width: 200px;
     height: 400px;
@@ -168,14 +202,16 @@ section h3 {
     margin-right: 20px;
     margin-bottom: 10px;
 }
-.img-especial{
+
+.img-especial {
     width: 200px;
     height: 200px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
-button{
+
+button {
     display: flex;
     margin-top: 1%;
     margin-left: 35%;
@@ -185,17 +221,20 @@ button{
     border-radius: 10px;
     padding: 2px;
 }
-button:hover{
+
+button:hover {
     color: rgb(0, 1, 24);
     background-color: white;
     border: 2px solid white;
     transition: background-color.2s;
     transition: border .1s;
 }
-.nohay{
+
+.nohay {
     color: white;
     margin-left: 27%;
 }
+
 footer {
     background-color: gray;
     padding: 1rem;
@@ -220,35 +259,44 @@ footer {
         border-radius: 100px;
         width: 15%;
     }
+
     .ul-header {
         padding: 10px;
     }
+
     .ul-header li {
         margin-left: 10px;
         margin-right: 10px;
     }
+
     section h3 {
         font-size: x-large;
     }
+
     .bio {
         margin-left: 50px;
         margin-right: 50px;
     }
+
     .img-formacion {
         width: 90%;
         margin-left: 10px;
     }
+
     .habilidades {
         flex-direction: row;
     }
-    .flexbox{
+
+    .flexbox {
         margin-left: 20%;
     }
+
     .img-trabajos {
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 20px;
     }
+
     .separador {
         padding-left: 10px;
         padding-right: 10px;
@@ -257,12 +305,15 @@ footer {
         border-top: none;
         border-bottom: none;
     }
-    button{
+
+    button {
         margin-left: 36%;
     }
-    .nohay{
+
+    .nohay {
         margin-left: 30%;
     }
+
     .ul-footer li {
         margin-left: 20px;
         margin-right: 20px;
@@ -278,10 +329,13 @@ footer {
     li {
         font-size: larger;
     }
-
-    .bio {
-        margin-left: 200px;
-        margin-right: 200px;
+    .Bio-Img{
+        flex-direction: row;
+        margin-left: 10%;
+        margin-right: 15%;
+    }
+    .Bio-Img img{
+        margin-left: 12.5%;
     }
 
     .img-formacion {
@@ -289,20 +343,25 @@ footer {
         width: 50%;
         margin-left: 25%;
     }
-    .img-formacion-celu{
+
+    .img-formacion-celu {
         display: none;
     }
+
     .separador {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .flexbox{
+
+    .flexbox {
         margin-left: 22.5%;
     }
-    button{
+
+    button {
         margin-left: 45%;
     }
-    .nohay{
+
+    .nohay {
         margin-left: 45%;
     }
 }

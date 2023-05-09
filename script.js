@@ -1,4 +1,4 @@
-let inicio = Date.parse('27 Feb 2023 19:26:00 GMT-4')
+let inicio = Date.parse('17 Apr 2023 00:21:00 GMT-4')
 let hoy = Date.now();
 let dif = hoy - inicio;
 const segundo = dif / 1000;
